@@ -128,14 +128,7 @@
                 </div>
               </li>
               <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a href="{{route('login')}}" class="btn btn-default btn-flat">Login</a>
-                </div>
-                <div class="pull-right">
-                  <a href="{{route('logout')}}" class="btn btn-default btn-flat">Salir</a>
-                </div>
-              </li>
+
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
