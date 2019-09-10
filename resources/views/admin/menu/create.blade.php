@@ -25,7 +25,7 @@
                 <div class="box-footer">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-6">
-                        @include('includes.boton-form-crear')
+                        @include('includes.boton-form-create')
                     </div>
                 </div>
             </form>
