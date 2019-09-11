@@ -13,7 +13,7 @@
 
 Route::get('/', 'InicioController@index');
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
-// Route::get('', 'AdminController@index');
+   Route::get('', 'AdminController@index');
     /*RUTAS DE PERMISO*/
    Route::get('permiso', 'PermisoController@index')->name('permiso');
    Route::get('permiso/create', 'PermisoController@create')->name('create_permiso');
@@ -36,4 +36,10 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
    Route::get('rol/{id}/edit', 'RolController@edit')->name('edit_rol');
    Route::put('rol/{id}', 'RolController@update')->name('update_rol');
    Route::delete('rol/{id}', 'RolController@destroy')->name('destroy_rol');
+    /*RUTAS MENU_ROL*/
+    Route::get('menu-rol', 'MenuRolController@index')->name('menu_rol');
+    Route::post('menu-rol', 'MenuRolController@store')->name('store_menu_rol');
+    /*RUTAS PERMISO_ROL*/
+    Route::get('permiso-rol', 'PermisoRolController@index')->name('permiso_rol');
+    Route::post('permiso-rol', 'PermisoRolController@store')->name('store_permiso_rol');
 });
